@@ -1,4 +1,5 @@
 public class StackFactory {
+    // Método para obtener una instancia de UVGStack
     public static UVGStack<?> getStack(String type) {
         switch (type) {
             case "arrayList":

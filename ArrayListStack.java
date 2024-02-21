@@ -7,6 +7,7 @@ public class ArrayListStack<T> implements UVGStack<T> {
         this.stack = new ArrayList<>();
     }
 
+    // Implementación de los métodos de la interfaz UVGStack
     @Override
     public void push(T item) {
         stack.add(item);

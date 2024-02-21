@@ -11,9 +11,11 @@ public class DoublyLinkedList<T> {
         }
     }
 
+    // La cabeza y la cola de la lista
     private Node<T> head = null;
     private Node<T> tail = null;
 
+    // Añade un elemento al inicio de la lista
     public void addFirst(T data) {
         Node<T> newNode = new Node<>(data, head, null);
         if (head != null) {
@@ -25,6 +27,7 @@ public class DoublyLinkedList<T> {
         }
     }
 
+    // Añade un elemento al final de la lista
     public void addLast(T data) {
         Node<T> newNode = new Node<>(data, null, tail);
         if (tail != null) {
@@ -36,6 +39,7 @@ public class DoublyLinkedList<T> {
         }
     }
 
+    // Elimina y devuelve el primer elemento de la lista
     public T removeFirst() {
         if (head == null) return null;
         T data = head.data;
@@ -48,6 +52,7 @@ public class DoublyLinkedList<T> {
         return data;
     }
 
+    // Elimina y devuelve el último elemento de la lista
     public T removeLast() {
         if (tail == null) return null;
         T data = tail.data;
@@ -60,6 +65,7 @@ public class DoublyLinkedList<T> {
         return data;
     }
 
+    // Verifica si la lista está vacía
     public boolean isEmpty() {
         return head == null;
     }

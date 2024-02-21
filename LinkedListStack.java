@@ -3,10 +3,12 @@ import java.util.LinkedList;
 public class LinkedListStack<T> implements UVGStack<T> {
     private LinkedList<T> stack;
 
+    // Constructor para inicializar la pila
     public LinkedListStack() {
         this.stack = new LinkedList<>();
     }
 
+    // Implementación de los métodos de la interfaz UVGStack
     @Override
     public void push(T item) {
         stack.addLast(item);
