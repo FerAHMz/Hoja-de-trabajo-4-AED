@@ -1,3 +1,11 @@
+/**
+ * Fernando Hernandez
+ * Nicolás Concuá
+ * Main.java
+ * 20/02/2024
+ * @param args Los argumentos de la línea de comandos no se utilizan.
+ */
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

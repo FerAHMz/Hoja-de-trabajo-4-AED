@@ -12,6 +12,7 @@ public class Calculadora {
         return instance;
     }
 
+    // Método para evaluar una expresión postfix
     public int evaluarPostfix(String expresion) {
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < expresion.length(); i++) {
